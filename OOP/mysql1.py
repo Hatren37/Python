@@ -1,4 +1,4 @@
-#
+#This program conects to a MySQL database and prints the connection details.
 import mysql.connector
 def main():
     try:
