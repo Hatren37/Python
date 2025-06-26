@@ -12,5 +12,11 @@ def main():
                 if c.rowcount > 0:
                         print(f"Record with roll number {roll_no} deleted successfully.")
                         cn.commit()  # Commit the changes to the database
+                else:
+                        print(f"No record found with roll number {roll_no}.")
+
+                ans = input("Do you want to delete another record? (yes/no): ")
+                if ans.lower() != 'yes':
+                        break
 
 main()
